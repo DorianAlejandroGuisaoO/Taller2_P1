@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="alert alert-success mt-4">
+    <h4>Thanks for subscribing!</h4>
+    <p>We have registered your email: <strong>{{ email }}</strong></p>
+  </div>
+
+  <!-- 🔙 Enlace para volver a Home -->
+  <div class="mt-3">
+    <a href="{% url 'home' %}" class="btn btn-primary">← Back to Home</a>
+  </div>
+{% endblock %}
